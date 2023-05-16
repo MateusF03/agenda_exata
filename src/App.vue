@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Tarefas:</h1>
+  <CriadorTarefas></CriadorTarefas>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import CriadorTarefas from './components/CriadorTarefas.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: "App",
+    components: {
+      CriadorTarefas
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  
+  
+  
+  body {
+    font-family: var(--font-family);
+} 
 </style>
